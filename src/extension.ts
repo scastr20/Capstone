@@ -23,6 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
 		})
 	  );
 	}
+	
 	//<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
 	// <iframe width="100%" height=650px" src="https://www.google.com/webhp?igu=1" title="Google">
 	  //  </iframe>
