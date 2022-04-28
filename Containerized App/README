@@ -1,0 +1,15 @@
+novnc_wireshark.sh makes a containerized noVNC with Wireshark on localhost:8080 that is connected to a new Docker Network, wireshark-net.
+  It also creates a containerized caddy webserver that hosts the noVNC container.
+
+clean.sh stops and removes the wireshark and caddy container. 
+
+
+The files in the capstone folder can be modified to add additional apps or to replace Wireshark.
+  Dockerfile:   to Download the application
+  menu.xml:     to add the application on the left-click menu
+  supervisord:  something about how apps are loaded in. (I don't know about how it works that well)
+
+The files in the caddy folder are for the caddy webserver.
+
+Credit to Patrick Gaskin at https://www.digitalocean.com/community/tutorials/how-to-remotely-access-gui-applications-using-docker-and-caddy-on-ubuntu-20-04
+  for the backbone of getting an app to display on a browser.
